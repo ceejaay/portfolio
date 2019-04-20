@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 
 function Header() {
   return (
-      <div>
+      <div className="header">
       Header ================
       Links to the other three parts of the site
       </div>

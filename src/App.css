@@ -23,6 +23,26 @@
   color: #61dafb;
 }
 
+.content-container {
+  border: dotted green 8px;
+  width: 66%;
+
+}
+
+
+
+.container {
+  border: dashed red 8px;
+
+}
+
+.footer {
+  border: dotted blue 3px;
+}
+
+.header{
+  border: dotted yellow 3px;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,4 +50,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+@media (min-width: 400px ) {
+  /* if it exceens the min width it changes to this: */
+  .content-container {
+     border: dashed black 8px; 
+  }
+
 }

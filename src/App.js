@@ -11,7 +11,7 @@ import {Route } from 'react-router-dom';
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="container">
         <Header />
         <Route exact path={"/"} component={MainContent}/>
         <Route path={"/items"} component={ItemPage }/>
