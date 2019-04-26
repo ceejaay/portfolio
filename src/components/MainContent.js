@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import pic from '../assets/chad_jemmett_picture.png';
+import {FaBeer} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
+import {GoMarkGithub} from 'react-icons/go';
+import {MdEmail} from 'react-icons/md';
+import {MdPhone} from 'react-icons/md';
 
 
 function MainContent() {
@@ -8,20 +13,19 @@ function MainContent() {
         <div className="content-container">
           <div className='headshot'>
             <img src={pic} />
-            my pic
           </div>
           <div className="contact-links">
               <div>
-                git hub
+                <GoMarkGithub className="icons" />
               </div>
               <div>
-                linkedin
+                <FaLinkedin className="icons"/>
               </div>
               <div>
-              gmail
+                <MdEmail className="icons"/>
               </div>
               <div>
-             phone
+                <MdPhone className="icons"/>
               </div>
             </div>
           </div>
@@ -35,6 +39,5 @@ function MainContent() {
       </div>)
 
   }
-
 
 export default MainContent;

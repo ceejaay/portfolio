@@ -88,8 +88,11 @@
   justify-content: space-around;
   align-items: center;
   background: lightgray;
+}
 
-
+.icons {
+  height: 1.8em;
+  width: 1.8em;
 }
 /* @keyframes App-logo-spin { */
 /*   from { */
