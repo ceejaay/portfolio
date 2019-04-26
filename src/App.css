@@ -24,38 +24,72 @@
 }
 
 .content-container {
+  display: flex;
+  justify-content: center;
   border: dotted green 8px;
   width: 66%;
-
 }
-
 
 
 .container {
-  border: dashed red 8px;
-
+  /* border: dashed red 8px; */
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
   border: dotted blue 3px;
 }
 
 .header{
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  flex-direction: column;
   border: dotted yellow 3px;
 }
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.header-buttons {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  border: dotted green 2px;
+  align-items: center;
+
 }
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+/* @keyframes App-logo-spin { */
+/*   from { */
+/*     transform: rotate(0deg); */
+/*   } */
+/*   to { */
+/*     transform: rotate(360deg); */
+/*   } */
+/* } */
 
 @media (min-width: 400px ) {
   /* if it exceens the min width it changes to this: */
+  /* outside of this is default */
   .content-container {
      border: dashed black 8px; 
+  }
+  .header {
+    display: flex;
+    height: 30px;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .header-buttons {
+    width: 20%;
+  border: dotted blue 2px;
+
   }
 
 }

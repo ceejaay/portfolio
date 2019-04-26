@@ -5,6 +5,7 @@ function MainContent() {
   return (
       <div>
         <div className="content-container">
+
           Main content
           ===================
           Thumbnail images  images and titles to my projects.

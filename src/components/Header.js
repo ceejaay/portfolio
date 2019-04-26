@@ -3,9 +3,11 @@ import React, { Component } from 'react';
 
 function Header() {
   return (
+
       <div className="header">
-      Header ================
-      Links to the other three parts of the site
+        <div className="header-buttons">Resume</div>
+        <div className="header-buttons">Projects</div>
+        <div className="header-buttons">Main</div>
       </div>
       )
 
