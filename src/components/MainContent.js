@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
+// import {Link} from 'react-router-dom';
 import pic from '../assets/chad_jemmett_picture.png';
-import {FaBeer} from 'react-icons/fa';
 import {FaLinkedin} from 'react-icons/fa';
 import {GoMarkGithub} from 'react-icons/go';
 import {MdEmail} from 'react-icons/md';
@@ -12,20 +12,20 @@ function MainContent() {
       <div>
         <div className="content-container">
           <div className='headshot'>
-            <img src={pic} />
+            <img src={pic}  alt={"chad.jemmett@gmail.com"}/>
           </div>
           <div className="contact-links">
               <div>
-                <GoMarkGithub className="icons" />
+                <a href="https://github.com/ceejaay"><GoMarkGithub className="icons" /></a>
               </div>
               <div>
-                <FaLinkedin className="icons"/>
+                <a href="https://www.linkedin.com/in/chad-jemmett-a3a0a347/"><FaLinkedin className="icons"/></a>
               </div>
               <div>
-                <MdEmail className="icons"/>
+                <a href="mailto:chad.jemmett@gmail.com"><MdEmail className="icons"/></a>
               </div>
               <div>
-                <MdPhone className="icons"/>
+                <a href="tel:12083500359"><MdPhone className="icons"/></a>
               </div>
             </div>
           </div>
