@@ -4,7 +4,15 @@ import React, { Component } from 'react';
 const ItemPage = () => {
   return(
       <div>
-      this will have a short paragraph on my project What I did what tech I used.
+        <div>
+          here we'll have a headline
+        </div>
+        <div>
+          here's the link
+        </div>
+        <div>
+          here's a descriptoin
+        </div>
       </div>
       )
 }

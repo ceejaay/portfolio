@@ -26,12 +26,13 @@
 .content-container {
   display: flex;
   justify-content: center;
-  border: dotted green 8px;
-  width: 66%;
+  flex-direction: column;
+  width: 100%;
 }
 
 
 .container {
+  padding: 0 2%;
   /* border: dashed red 8px; */
 }
 
@@ -64,6 +65,32 @@
   justify-content: center;
 }
 
+.headshot {
+  width: 100%;
+
+}
+
+.headshot img {
+  max-width: 100%;
+  height: auto;
+
+}
+.about-me {
+  width: 100%;
+  background: lightsalmon;
+
+}
+
+.contact-links {
+  display: flex;
+  width: 100%;
+  height: 45px;
+  justify-content: space-around;
+  align-items: center;
+  background: lightgray;
+
+
+}
 /* @keyframes App-logo-spin { */
 /*   from { */
 /*     transform: rotate(0deg); */
