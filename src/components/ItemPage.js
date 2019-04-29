@@ -9,7 +9,7 @@ const ItemPage = () => {
           <h2>Don't Send that Email</h2>
         </div>
         <div className="project-image">
-            <img src={pic}  alt={"don't send that email"}/>
+           <a href="https://dont-send-that-email.netlify.com/"> <img src={pic}  alt={"don't send that email"}/></a>
         </div>
         <div className="project-desription">
           <p>
@@ -19,6 +19,21 @@ const ItemPage = () => {
           </p>
 
           <div className="project-links">
+            <a href="https://dont-send-that-email.netlify.com/">
+              <div className="link-buttons">
+                Live Project Link
+              </div>
+            </a>
+            <a href="https://github.com/Lambda-School-Labs/dont-send-that-email">
+              <div className="link-buttons">
+                Github Repository
+              </div>
+            </a>
+            <a href="https://github.com/Lambda-School-Labs/dont-send-that-email/pulls?q=is%3Apr+is%3Aclosed+author%3Aceejaay">
+              <div className="link-buttons">
+                Link to My Pull Requests
+              </div>
+            </a>
           </div>
         </div>
       </div>

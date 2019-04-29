@@ -100,6 +100,21 @@
   width: 1.8em;
   color: black;
 }
+
+.link-buttons {
+  display: flex;
+  height: 75px;
+  width: 100%;
+  margin: 5px 0;
+  border: black solid 1px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+
+
+
 /* @keyframes App-logo-spin { */
 /*   from { */
 /*     transform: rotate(0deg); */
