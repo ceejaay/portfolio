@@ -53,14 +53,16 @@ class MainContent extends Component {
           </div>
           <div className="project-summary">
           {
-            this.state.projects.map((item, i)=>  {
+            this.state.projects.map((item)=>  {
                   return (
-                    <div key={i}>
-                      <h4>{item.name}</h4>
-                      <div>
-                        <img src={item.image} alt={item.title}/>
+                    <Link to={`/${item.id}`}>
+                      <div key={item.id}>
+                        <h4>{item.name}</h4>
+                        <div>
+                          <img src={item.image} alt={item.title}/>
+                        </div>
                       </div>
-                    </div>
+                    </Link>
                     )
               }
             )

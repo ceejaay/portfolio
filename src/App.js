@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 // import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome'
 // import { faStroopwafel  } from '@fortawesome/free-solid-svg-icons'
 
+// const  dotenv = require('dotenv')
 // library.add(faStroopwafel);
 
 
