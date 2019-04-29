@@ -1,35 +1,33 @@
-import React from 'react';
-import pic from '../assets/dont_send_that_email.png';
+import React, {Component} from 'react';
 
 
-const ItemPage = () => {
+
+const ItemPage = props  =>  {
   return(
       <div>
         <div className="project-headline">
-          <h2>Don't Send that Email</h2>
+          <h2>{props.name}</h2>
         </div>
         <div className="project-image">
-           <a href="https://dont-send-that-email.netlify.com/"> <img src={pic}  alt={"don't send that email"}/></a>
+           <a href={props.links}> <img src={props.imageName}  alt={props.title}/></a>
         </div>
-        <div className="project-desription">
+        <div className="project-description">
           <p>
-            Don't send that email is a 
-            The part I'm most proud of is working on is integrating the Watson API into the project. I researched the API and reported my research to my team. I wrote the code that retreived the information from the Watson API to the app. Then that was used to crunch the data put in by the user.
-
+            {props.description}
           </p>
 
           <div className="project-links">
-            <a href="https://dont-send-that-email.netlify.com/">
+            <a href={props.links}>
               <div className="link-buttons">
                 Live Project Link
               </div>
             </a>
-            <a href="https://github.com/Lambda-School-Labs/dont-send-that-email">
+            <a href={props.links}>
               <div className="link-buttons">
                 Github Repository
               </div>
             </a>
-            <a href="https://github.com/Lambda-School-Labs/dont-send-that-email/pulls?q=is%3Apr+is%3Aclosed+author%3Aceejaay">
+            <a href={props.links}>
               <div className="link-buttons">
                 Link to My Pull Requests
               </div>
@@ -39,5 +37,9 @@ const ItemPage = () => {
       </div>
       )
 }
+
+
+
+ 
 
 export default ItemPage;

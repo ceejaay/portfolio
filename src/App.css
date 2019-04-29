@@ -51,12 +51,11 @@
 
 .header-buttons {
   display: flex;
-  height: 100px;
+  height: 75px;
   margin: 5px 0;
   border: black solid 1px;
   justify-content: center;
   align-items: center;
-
 }
 
 .main-content {
@@ -113,6 +112,9 @@
 }
 
 
+.project-links a {
+  text-decoration: none;
+}
 
 
 /* @keyframes App-logo-spin { */
