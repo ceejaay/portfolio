@@ -74,6 +74,12 @@
   height: auto;
 
 }
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+
+}
 .about-me {
   width: 100%;
   background: lightsalmon;
