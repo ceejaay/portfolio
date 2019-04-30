@@ -16,16 +16,18 @@ import Footer from './components/Footer';
 
 
 import './App.css';
-import {Route } from 'react-router-dom';
+import {Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   render() {
     return (
       <div className="container">
         <Header />
-        <Route exact path={"/"} component={MainContent}/>
-        <Route exact path={"/:id"} component={ItemPage} />
-        <Route path={"/resume"} component={Resume}/>
+        <Switch>
+          <Route exact path={"/"} component={MainContent}/>
+          <Route exact path={"/resume"} component={Resume}/>
+          <Route path={"/:id"} component={ItemPage} />
+        </Switch>
       </div>);
   }
 }

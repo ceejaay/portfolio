@@ -4,7 +4,7 @@ import React, {Component} from 'react';
 
 const ItemPage = props  =>  {
   const { projData } = props.location.state;
-  console.log("links?", projData.links.liveSite);
+  // console.log("links?", projData.links.liveSite);
   return(
       <div>
         <div className="project-headline">
