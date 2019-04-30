@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 // import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome'
 // import { faStroopwafel  } from '@fortawesome/free-solid-svg-icons'
 
+       // <Route path='/smurf-form' render={(props) => <SmurfForm {...props} newSmurf={this.newSmurf}/>} />
 // const  dotenv = require('dotenv')
 // library.add(faStroopwafel);
 
@@ -23,7 +24,7 @@ class App extends Component {
       <div className="container">
         <Header />
         <Route exact path={"/"} component={MainContent}/>
-        <Route path={"/items"} component={ItemPage }/>
+        <Route exact path={"/:id"} component={ItemPage} />
         <Route path={"/resume"} component={Resume}/>
       </div>);
   }

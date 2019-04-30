@@ -1,6 +1,11 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import pic from '../assets/chad_jemmett_picture.png';
+import {Route} from 'react-router-dom';
+import ItemPage from './ItemPage';
+import ItemPreview from './ItemPreview';
+import mypicture from '../assets/chad_jemmett_picture.png';
+import emailPic from '../assets/email_pic.png';
+import doa from '../assets/doa.png';
 // import imagePath from '../assets/';
 import projectData from '../assets/json_data.js';
 import {FaLinkedin} from 'react-icons/fa';
@@ -9,6 +14,8 @@ import {MdEmail} from 'react-icons/md';
 import {MdPhone} from 'react-icons/md';
 
 
+// <img src={pic}  alt={"chad.jemmett@gmail.com"}/>
+// <img src={"https://www.dropbox.com/s/bl1yl0ld9js2xj1/chad_jemmett_picture.png"}  alt={"chad.jemmett@gmail.com"}/>
 class MainContent extends Component {
   constructor(props) {
     super(props);
@@ -29,7 +36,7 @@ class MainContent extends Component {
         <div>
           <div className="content-container">
             <div className='headshot'>
-              <img src={pic}  alt={"chad.jemmett@gmail.com"}/>
+              <img src={mypicture}  alt={"chad.jemmett@gmail.com"}/>
             </div>
             <div className="contact-links">
                 <div>
@@ -55,14 +62,9 @@ class MainContent extends Component {
           {
             this.state.projects.map((item)=>  {
                   return (
-                    <Link to={`/${item.id}`}>
-                      <div key={item.id}>
-                        <h4>{item.name}</h4>
-                        <div>
-                          <img src={item.image} alt={item.title}/>
-                        </div>
-                      </div>
-                    </Link>
+                      <Link to={{pathname: `/${item.id}`, state: { projData: item }}} >
+                        <ItemPreview projData={item} key={item.id}/>
+                      </Link>
                     )
               }
             )

@@ -116,7 +116,15 @@
   text-decoration: none;
 }
 
+.project-summary {
 
+}
+
+.project-summary img {
+  max-width: 100%;
+  height: auto;
+
+}
 /* @keyframes App-logo-spin { */
 /*   from { */
 /*     transform: rotate(0deg); */
