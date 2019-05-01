@@ -214,6 +214,13 @@
     width: 20%;
   border: dotted blue 2px;
 
+  .desktop-version {
+    max-width: 30%;
+    height: auto;
+    border-radius: 25%;
+
+  }
+
   }
 
 }

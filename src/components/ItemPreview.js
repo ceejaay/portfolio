@@ -21,7 +21,7 @@ const ItemPreview = (props) => {
           {props.projData.name}
         </div>
         <div className="preview-image">
-          <div style={divStyle}></div>
+          <div className="desktop-version" style={divStyle}></div>
         </div>
       </div>
       )
