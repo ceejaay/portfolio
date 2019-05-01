@@ -25,7 +25,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path={"/"} component={MainContent}/>
-          <Route exact path={"/resume"} component={Resume}/>
+          <Route path={"/resume"} component={Resume}/>
           <Route path={"/:id"} component={ItemPage} />
         </Switch>
       </div>);
