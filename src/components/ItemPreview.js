@@ -8,9 +8,10 @@ import React from 'react';
 const ItemPreview = (props) => {
   const divStyle = {
     backgroundImage: `url(${props.projData.image})`,
-    height: '150px',
-    maxWidth: '50%',
+    height: '250px',
+    width: '250px',
     borderRadius: "50%",
+    backgroundSize: 'cover',
   }
 
 
