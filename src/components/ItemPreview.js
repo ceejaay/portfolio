@@ -3,6 +3,7 @@ import React from 'react';
 
 // const { project } = props.location.state.projData
 // console.log("project", project)
+          // <div className="desktop-version" style={divStyle}></div>
 
           // <img src={props.projData.image}  alt={props.projData.name}/>
 const ItemPreview = (props) => {
@@ -21,7 +22,7 @@ const ItemPreview = (props) => {
           {props.projData.name}
         </div>
         <div className="preview-image">
-          <div className="desktop-version" style={divStyle}></div>
+          <img src={props.projData.image}  alt={props.projData.name}/>
         </div>
       </div>
       )
