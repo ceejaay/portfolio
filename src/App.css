@@ -152,9 +152,9 @@
 }
 
 .project-summary img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  max-width: 95%;
+  height: auto;
+  border-radius: 10%;
   height: auto;
 
   /* border-radius: 50%; */
