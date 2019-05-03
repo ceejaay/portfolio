@@ -17,6 +17,10 @@ const ItemPage = props  =>  {
                 <p>
                   {projData.description}
                 </p>
+                <b>
+                  {projData.notes}
+                </b>
+
 
                 <div className="project-links">
                   <a href={projData.links.liveSite}>

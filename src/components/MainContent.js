@@ -58,18 +58,16 @@ class MainContent extends Component {
                 Hi, I'm Chad Jemmett. I'm a full-stack web developer. My background is in communication and broadcast. I love building tools that help people communicate. Check out my portfolio and my resume
               </p>
           </div>
-          <div className="project-summary">
           {
             this.state.projects.map((item)=>  {
                   return (
-                      <Link to={{pathname: `/${item.id}`, state: { projData: item }}} >
+                      <Link to={`/${item.id}`}>
                         <ItemPreview projData={item} key={item.id}/>
                       </Link>
                     )
               }
             )
           }
-          </div>
         </div>)
     }
 

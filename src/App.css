@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+
+a {
+  text-decoration: none;
+}
 /* .App-logo { */
 /*   animation: App-logo-spin infinite 20s linear; */
 /*   height: 40vmin; */
@@ -56,9 +60,8 @@
 
 .header-buttons {
   display: flex;
-  height: 75px;
+  height: 60px;
   margin: 5px 0;
-  border: black solid 1px;
   justify-content: center;
   align-items: center;
   background: #EFEfef;
@@ -72,6 +75,7 @@
 
 .headshot {
   width: 100%;
+  margin: 25px 0 0 0;
 
 }
 
@@ -88,10 +92,13 @@
 }
 .about-me {
   width: 100%;
+  margin: 50px 0 50px 0;
   background: #EFEFEF;
-
 }
 
+.about-me p {
+  padding: 10% 5%;
+}
 .contact-links {
   display: flex;
   width: 100%;
@@ -125,7 +132,17 @@
   color: #FF3B3F;
 }
 
+/* .preview-component { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   justify-content: center; */
+
+/* } */
+
 .project-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   padding: 0 0 25px 0;
 }
@@ -133,6 +150,7 @@
 .project-summary a {
   text-decoration: none;
 }
+
 .preview-name {
   display: flex;
   align-items: center;
@@ -200,11 +218,32 @@
 @media (min-width: 400px ) {
   /* if it exceens the min width it changes to this: */
   /* outside of this is default */
-  .content-container {
-     border: dashed black 8px; 
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
   }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 66%;
+  border: dotted yellow 2px;
+  }
+
+  .contact-links {
+    display: flex;
+    width: 66%;
+    height: 45px;
+    justify-content: space-around;
+    align-items: center;
+    background: #EFEFEF;
+  }
+
   .header {
     display: flex;
+    width: 66%;
     height: 30px;
     flex-direction: row;
     justify-content: space-around;

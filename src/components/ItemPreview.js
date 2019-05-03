@@ -17,7 +17,7 @@ const ItemPreview = (props) => {
 
 
   return (
-      <div>
+      <div className="project-summary">
         <div className="preview-name">
           {props.projData.name}
         </div>
