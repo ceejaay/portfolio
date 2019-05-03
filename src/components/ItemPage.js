@@ -7,13 +7,13 @@ const ItemPage = props  =>  {
   const projData = projectData.projects.filter(item => item.id == props.match.params.id)[0];
         return(
             <div>
-              <div className="project-headline">
+              <div>
                 <h2>{projData.name}</h2>
               </div>
-              <div className="project-image">
+              <div >
                 <img src={projData.image}  alt={projData.title}/>
               </div>
-              <div className="project-description">
+              <div >
                 <p>
                   {projData.description}
                 </p>
@@ -22,19 +22,19 @@ const ItemPage = props  =>  {
                 </b>
 
 
-                <div className="project-links">
+                <div>
                   <a href={projData.links.liveSite}>
-                    <div className="link-buttons">
+                    <div>
                       Live Project Link
                     </div>
                   </a>
                   <a href={projData.links.github}>
-                    <div className="link-buttons">
+                    <div>
                       Github Repository
                     </div>
                   </a>
                   <a href={projData.links.pullRequests}>
-                    <div className="link-buttons">
+                    <div>
                       Link to My Pull Requests
                     </div>
                   </a>

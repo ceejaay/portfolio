@@ -17,11 +17,11 @@ const ItemPreview = (props) => {
 
 
   return (
-      <div className="project-summary">
-        <div className="preview-name">
+      <div>
+        <div>
           {props.projData.name}
         </div>
-        <div className="preview-image">
+        <div>
           <img src={props.projData.image}  alt={props.projData.name}/>
         </div>
       </div>

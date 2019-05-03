@@ -34,30 +34,17 @@ class MainContent extends Component {
   render() {
     return (
         <div>
-          <div className="content-container">
-            <div className='headshot'>
+          <div>
+            <div>
               <img src={mypicture}  alt={"chad.jemmett@gmail.com"}/>
             </div>
-            <div className="contact-links">
-                <div>
-                  <a href="https://github.com/ceejaay"><GoMarkGithub className="icons" /></a>
-                </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/chad-jemmett-a3a0a347/"><FaLinkedin className="icons"/></a>
-                </div>
-                <div>
-                  <a href="mailto:chad.jemmett@gmail.com"><MdEmail className="icons"/></a>
-                </div>
-                <div>
-                  <a href="tel:12083500359"><MdPhone className="icons"/></a>
-                </div>
-              </div>
-            </div>
-            <div className="about-me">
+            <div>
+           <div>
               <p>
                 Hi, I'm Chad Jemmett. I'm a full-stack web developer. My background is in communication and broadcast. I love building tools that help people communicate. Check out my portfolio and my resume
               </p>
           </div>
+            </div>
           {
             this.state.projects.map((item)=>  {
                   return (
