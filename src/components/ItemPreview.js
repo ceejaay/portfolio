@@ -22,7 +22,7 @@ const ItemPreview = (props) => {
           {props.projData.name}
         </div>
         <div>
-          <img src={props.projData.image}  alt={props.projData.name}/>
+          <img src={'.'}  alt={props.projData.name}/>
         </div>
       </div>
       )

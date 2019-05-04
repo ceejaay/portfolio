@@ -14,6 +14,16 @@ import {MdEmail} from 'react-icons/md';
 import {MdPhone} from 'react-icons/md';
 
 
+const imgStyle = {
+  backgroundImage: `url(${mypicture})`,
+  height: '250px',
+  width: '250px',
+  borderRadius: "50%",
+  backgroundSize: 'cover',
+
+}
+
+            // <img src={"."} alt={'chad jemmett'} />
 // <img src={pic}  alt={"chad.jemmett@gmail.com"}/>
 // <img src={"https://www.dropbox.com/s/bl1yl0ld9js2xj1/chad_jemmett_picture.png"}  alt={"chad.jemmett@gmail.com"}/>
 class MainContent extends Component {
@@ -32,9 +42,9 @@ class MainContent extends Component {
 
   render() {
     return (
-        <div>
-          <div>
-            <img src={mypicture} alt={'chad jemmett'} />
+        <div className="content-container">
+          <div className='headshot'>
+            <div style={imgStyle}></div>
           </div>
           <div>
             <p>Hello! My name is Chad Jemmett</p>
