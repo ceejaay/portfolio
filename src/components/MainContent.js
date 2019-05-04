@@ -22,7 +22,6 @@ class MainContent extends Component {
     this.state = {
       projects: [],
     }
-
   }
 
 
@@ -35,26 +34,20 @@ class MainContent extends Component {
     return (
         <div>
           <div>
-            <div>
-              <img src={mypicture}  alt={"chad.jemmett@gmail.com"}/>
-            </div>
-            <div>
-           <div>
-              <p>
-                Hi, I'm Chad Jemmett. I'm a full-stack web developer. My background is in communication and broadcast. I love building tools that help people communicate. Check out my portfolio and my resume
-              </p>
+            <img src={mypicture} alt={'chad jemmett'} />
           </div>
-            </div>
-          {
-            this.state.projects.map((item)=>  {
-                  return (
-                      <Link to={`/${item.id}`}>
-                        <ItemPreview projData={item} key={item.id}/>
-                      </Link>
-                    )
-              }
-            )
-          }
+          <div>
+            <p>Hello! My name is Chad Jemmett</p>
+          </div>
+
+          <div>
+          { this.state.projects.map((item)=>  {
+            return (
+              <Link to={`/${item.id}`}>
+                <ItemPreview projData={item} key={item.id}/>
+              </Link>
+            )})}
+          </div>
         </div>)
     }
 
