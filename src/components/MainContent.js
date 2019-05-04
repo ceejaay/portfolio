@@ -14,6 +14,16 @@ import {MdEmail} from 'react-icons/md';
 import {MdPhone} from 'react-icons/md';
 
 
+const imgStyle = {
+  backgroundImage: `url(${mypicture})`,
+  height: '250px',
+  width: '250px',
+  borderRadius: "50%",
+  backgroundSize: 'cover',
+
+}
+
+            // <img src={"."} alt={'chad jemmett'} />
 // <img src={pic}  alt={"chad.jemmett@gmail.com"}/>
 // <img src={"https://www.dropbox.com/s/bl1yl0ld9js2xj1/chad_jemmett_picture.png"}  alt={"chad.jemmett@gmail.com"}/>
 class MainContent extends Component {
@@ -22,7 +32,6 @@ class MainContent extends Component {
     this.state = {
       projects: [],
     }
-
   }
 
 
@@ -33,42 +42,22 @@ class MainContent extends Component {
 
   render() {
     return (
-        <div>
-          <div className="content-container">
-            <div className='headshot'>
-              <img src={mypicture}  alt={"chad.jemmett@gmail.com"}/>
-            </div>
-            <div className="contact-links">
-                <div>
-                  <a href="https://github.com/ceejaay"><GoMarkGithub className="icons" /></a>
-                </div>
-                <div>
-                  <a href="https://www.linkedin.com/in/chad-jemmett-a3a0a347/"><FaLinkedin className="icons"/></a>
-                </div>
-                <div>
-                  <a href="mailto:chad.jemmett@gmail.com"><MdEmail className="icons"/></a>
-                </div>
-                <div>
-                  <a href="tel:12083500359"><MdPhone className="icons"/></a>
-                </div>
-              </div>
-            </div>
-            <div className="about-me">
-              <p>
-                Hi, I'm Chad Jemmett. I'm a full-stack web developer. My background is in communication and broadcast. I love building tools that help people communicate. Check out my portfolio and my resume
-              </p>
+        <div className="content-container">
+          <div className='headshot'>
+            <div style={imgStyle}></div>
           </div>
-          <div className="project-summary">
-          {
-            this.state.projects.map((item)=>  {
-                  return (
-                      <Link to={{pathname: `/${item.id}`, state: { projData: item }}} >
-                        <ItemPreview projData={item} key={item.id}/>
-                      </Link>
-                    )
-              }
-            )
-          }
+          <div className="about-me">
+            <h3>Hello! My name is <strong>Chad Jemmett</strong></h3>
+            <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
+          </div>
+
+          <div>
+          { this.state.projects.map((item)=>  {
+            return (
+              <Link to={`/${item.id}`}>
+                <ItemPreview projData={item} key={item.id}/>
+              </Link>
+            )})}
           </div>
         </div>)
     }

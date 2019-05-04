@@ -1,7 +1,6 @@
-.App {
-  text-align: center;
+a {
+  text-decoration: none;
 }
-
 /* .App-logo { */
 /*   animation: App-logo-spin infinite 20s linear; */
 /*   height: 40vmin; */
@@ -19,51 +18,52 @@
 /*   color: white; */
 /* } */
 
-.App-link {
-  color: #61dafb;
-}
 .container {
-  padding: 0 2%;
-  background: #a9a9a9;
-  /* border: dashed red 8px; */
+  width: 100%;
+  /* background: #a9a9a9; */
+  /* border: dotted red 3px; */
 }
 
 .content-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  margin-top: 44px;
   width: 100%;
+  /* border: dotted yellow 3px; */
+
 }
 
 
 
-.footer {
-  display: flex;
-  justify-content: center;
-}
 
 .header{
   display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #282828;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
   width: 100%;
-  height: 200px;
-  justify-content: center;
-  flex-direction: column;
+  z-index: 10000;
+  height: 44px;
+  line-height: 44px;
+
 }
 
 .header a {
-  text-decoration: none;
+  color: white;
+  font-weight: 600;
 }
 
-.header-buttons {
-  display: flex;
-  height: 75px;
-  margin: 5px 0;
-  border: black solid 1px;
-  justify-content: center;
-  align-items: center;
-  background: #EFEfef;
-  color: #FF3B3F;
-}
+/* .header-buttons { */
+/*   display: flex; */
+/*   height: 60px; */
+/*   margin: 5px 0; */
+/*   justify-content: center; */
+/*   align-items: center; */
+/*   background: #EFEfef; */
+/*   color: #FF3B3F; */
+/* } */
 
 .main-content {
   display: flex;
@@ -71,41 +71,54 @@
 }
 
 .headshot {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+
 
 }
 
-.headshot img {
-  max-width: 100%;
-  height: auto;
+/* .headshot img { */
+/*   max-width: 100%; */
+/*   height: auto; */
 
-}
+/* } */
 
 .project-image img {
   max-width: 100%;
   height: auto;
 
 }
+
+h1,strong {
+  font-weight: 700;
+}
 .about-me {
-  width: 100%;
-  background: #EFEFEF;
-
-}
-
-.contact-links {
   display: flex;
+  justify-content: center;
   width: 100%;
-  height: 45px;
-  justify-content: space-around;
-  align-items: center;
-  background: #EFEFEF;
+  /* border: dotted green 3px; */
 }
 
-.icons {
-  height: 1.8em;
-  width: 1.8em;
-  color: #FF3B3F;
+.about-me p {
 }
+
+/* .contact-links { */
+/*   display: flex; */
+/*   width: 100%; */
+/*   height: 45px; */
+/*   justify-content: space-around; */
+/*   align-items: center; */
+/*   background: #EFEFEF; */
+/* } */
+
+/* .icons { */
+/*   height: 1.8em; */
+/*   width: 1.8em; */
+/*   color: #FF3B3F; */
+/* } */
 
 .link-buttons {
   display: flex;
@@ -125,25 +138,39 @@
   color: #FF3B3F;
 }
 
+/* .preview-component { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   justify-content: center; */
+
+/* } */
+
 .project-summary {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   padding: 0 0 25px 0;
+  color: white;
+  font-weight: 600;
+  border-radius: 20px;
+  margin: 20px 0;
 }
 
 .project-summary a {
   text-decoration: none;
 }
+
 .preview-name {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 50px;
-  background: #EFEFEF;
-  color: #FF3B3F;
+  background-color: #282828;
 }
 
-.preview-image {
+.preview-image-div {
   width: 100%;
   display: flex;
   align-items: center;
@@ -151,14 +178,21 @@
   margin: 25px 0;
 }
 
-.project-summary img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  height: auto;
-
-  /* border-radius: 50%; */
+.summary-img {
+  height: 100px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; 
+  background-size: cover;
 }
+/* .project-summary img { */
+/*   max-width: 95%; */
+/*   height: auto; */
+/*   border-radius: 10%; */
+/*   height: auto; */
+
+/*   /1* border-radius: 50%; *1/ */
+/* } */
 
 .resume-header {
   border: dotted black 2px;
@@ -200,27 +234,5 @@
 @media (min-width: 400px ) {
   /* if it exceens the min width it changes to this: */
   /* outside of this is default */
-  .content-container {
-     border: dashed black 8px; 
-  }
-  .header {
-    display: flex;
-    height: 30px;
-    flex-direction: row;
-    justify-content: space-around;
   }
 
-  .header-buttons {
-    width: 20%;
-  border: dotted blue 2px;
-
-  .desktop-version {
-    max-width: 30%;
-    height: auto;
-    border-radius: 25%;
-
-  }
-
-  }
-
-}
