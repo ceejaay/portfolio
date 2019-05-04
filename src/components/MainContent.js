@@ -46,8 +46,9 @@ class MainContent extends Component {
           <div className='headshot'>
             <div style={imgStyle}></div>
           </div>
-          <div>
-            <p>Hello! My name is Chad Jemmett</p>
+          <div className="about-me">
+            <h3>Hello! My name is <strong>Chad Jemmett</strong></h3>
+            <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
           </div>
 
           <div>
