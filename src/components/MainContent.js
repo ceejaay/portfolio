@@ -50,7 +50,7 @@ class MainContent extends Component {
             <div className="main-bio-text">
               <div className="about-me">
                 <div className="main-greeting-name">
-                  <h3>Hello! My name is <strong>Chad Jemmett</strong></h3>
+                  <h3>Hello! My name is <h1>Chad Jemmett</h1></h3>
                 </div>
                 <div className="main-about-me-text">
                   <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
