@@ -5,9 +5,11 @@ function Header() {
   return (
 
       <div className="header">
-        <Link to={"/"} ><div>Main</div> </Link>
-        <Link to={"/resume"}><div >Resume</div> </Link>
-        <Link to={"#"} ><div>Contact Me</div> </Link>
+        <div className="header-link-div">
+          <Link to={"/"} ><div>Main</div> </Link>
+          <Link to={"#"}><div >Resume</div> </Link>
+          <Link to={"#"} ><div>Contact Me</div> </Link>
+        </div>
       </div>
       )
 

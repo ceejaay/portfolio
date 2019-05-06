@@ -181,7 +181,7 @@ h1,strong {
 .summary-img {
   height: 100px;
   width: 100%;
-  background-position: 50% 50%;
+  /* background-position: 50% 50%; */
   background-repeat: no-repeat; 
   background-size: cover;
 }
@@ -230,6 +230,11 @@ h1,strong {
   /* border: dotted yellow 2px; */
   margin: 2px 0;
 }
+
+/* .header-link-div { */
+/*   width: 70%; */
+
+/* } */
 /* @keyframes App-logo-spin { */
 /*   from { */
 /*     transform: rotate(0deg); */
@@ -240,6 +245,77 @@ h1,strong {
 /* } */
 
 @media (min-width: 400px ) {
+  .header{
+    background-color: #282828;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+    height: 44px;
+    line-height: 44px;
+
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  .content-container {
+    display: flex;
+    flex-direction: column;
+  border: dotted green 3px;
+    width: 66%;
+  }
+
+  .main-preview-content {
+  border: dashed yellow 3px;
+  }
+
+  .main-bio-content {
+    display: flex;
+    align-items: center;
+  border: dotted red 3px;
+  }
+
+  .main-bio-text {
+    display: flex;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    border: dotted green 3px;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-greeting-name {
+    width: 80%;
+    margin: 10px 3%;
+  border: dotted green 2px;
+  }
+
+  .main-about-me-text {
+    border: dashed green 4px;
+    width: 80%;
+    margin: 10px 3%;
+  }
+
+  .header-link-div {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    width: 50%;
+    font-weight: 600;
+
+
+  }
+  .header-link-div a {
+    color: white;
+
+  }
   /* if it exceens the min width it changes to this: */
   /* outside of this is default */
   }

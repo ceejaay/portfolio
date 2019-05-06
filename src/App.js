@@ -13,6 +13,7 @@ import Footer from './components/Footer';
 // const  dotenv = require('dotenv')
 // library.add(faStroopwafel);
 
+          // <Route path={"/resume"} component={Resume}/>
 
 
 import './App.css';
@@ -25,7 +26,6 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path={"/"} component={MainContent}/>
-          <Route path={"/resume"} component={Resume}/>
           <Route path={"/:id"} component={ItemPage} />
         </Switch>
       </div>);

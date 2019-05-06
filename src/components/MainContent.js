@@ -43,15 +43,23 @@ class MainContent extends Component {
   render() {
     return (
         <div className="content-container">
-          <div className='headshot'>
-            <div style={imgStyle}></div>
-          </div>
-          <div className="about-me">
-            <h3>Hello! My name is <strong>Chad Jemmett</strong></h3>
-            <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
+          <div className="main-bio-content">
+            <div className='headshot'>
+              <div style={imgStyle}></div>
+            </div>
+            <div className="main-bio-text">
+              <div className="about-me">
+                <div className="main-greeting-name">
+                  <h3>Hello! My name is <strong>Chad Jemmett</strong></h3>
+                </div>
+                <div className="main-about-me-text">
+                  <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div>
+          <div className="main-preview-content">
           { this.state.projects.map((item)=>  {
             return (
               <Link to={`/${item.id}`}>
