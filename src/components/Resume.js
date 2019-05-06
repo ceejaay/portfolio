@@ -5,7 +5,7 @@ import React from 'react';
 const Resume = () => {
   return(
 
-     <div>
+     <div className="resume-container">
        <div className="resume-header">
          <h1>Chad Jemmett</h1>
          <email>chad.jemmett@gmail.com</email>

@@ -194,32 +194,40 @@ h1,strong {
 /*   /1* border-radius: 50%; *1/ */
 /* } */
 
+.resume-container {
+  width: 100%;
+  padding: 0 5%;
+
+}
 .resume-header {
-  border: dotted black 2px;
-  margin: 2px 0;
-  background: #FF3B3F;
-  color: #EFEFEF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: #FF3B3F; */
+  /* color: #EFEFEF; */
+  margin-top: 44px;
 }
 
 .resume-header a  {
-  color: #EFEFEF;
   text-decoration: none;
+  margin: 7px 0;
 }
 
 .resume-skills {
-  border: dotted red 2px;
+  /* border: dotted red 2px; */
   margin: 2px 0;
 }
 .resume-projects {
-  border: dotted green 2px;
+  /* border: dotted green 2px; */
   margin: 2px 0;
 }
 .resume-job-history {
-  border: dotted blue 2px;
+  /* border: dotted blue 2px; */
   margin: 2px 0;
 }
 .resume-education {
-  border: dotted yellow 2px;
+  /* border: dotted yellow 2px; */
   margin: 2px 0;
 }
 /* @keyframes App-logo-spin { */

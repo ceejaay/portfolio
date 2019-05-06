@@ -13,7 +13,7 @@ const projectData = {
       id: 2,
       name: "Dead or Alive?",
       description: "My primary work on this project was on the backend. I planned and executed the database schema. I prepared all the endpoints for the React developer to access. The challenging part of this project was to communicate clearly with the React developer. We had to be clear how the data would get from front end to the backend. ",
-      links: {liveSite: "https://doa-dev-marketing.herokuapp.com/", github: "https://github.com/BrianARuff/team_dead_or_alive/tree/master/api", pullRequests: "https://github.com/Lambda-School-Labs/dont-send-that-email/pulls?q=is%3Apr+is%3Aclosed+author%3Aceejaay"},
+      links: {liveSite: "https://doa-dev-marketing.herokuapp.com/", github: "https://github.com/BrianARuff/team_dead_or_alive/tree/master/api", pullRequests: "https://github.com/BrianARuff/team_dead_or_alive/pulls?q=is%3Apr+is%3Aclosed+author%3Aceejaay"},
       image: "https://i.imgur.com/IXCrfJX.png",
       notes: "Note: There are no pull requests for this project. My project manager and I were simply merging to master without pull requests."
     },
