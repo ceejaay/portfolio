@@ -318,6 +318,15 @@ h1,strong {
     color: white;
 
   }
+
+  .main-cta-button {
+    height: 100px;
+    width: 65%;
+    border: black solid 1px;
+    background: blue;
+    color: white;
+    text-align: center;
+  }
   /* if it exceens the min width it changes to this: */
   /* outside of this is default */
   }

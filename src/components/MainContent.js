@@ -56,6 +56,7 @@ class MainContent extends Component {
                   <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
                 </div>
               </div>
+              <Link to={'about'}><div className="main-cta-button">See what I do</div></Link>
             </div>
           </div>
 
@@ -67,6 +68,7 @@ class MainContent extends Component {
               </Link>
             )})}
           </div>
+            <div id="about"></div>
         </div>)
     }
 
