@@ -320,12 +320,17 @@ h1,strong {
   }
 
   .main-cta-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100px;
     width: 65%;
     border: black solid 1px;
+    border-radius: 8px;
     background: blue;
     color: white;
-    text-align: center;
+    font-weight: 700;
+    max-width: 24em;
   }
   /* if it exceens the min width it changes to this: */
   /* outside of this is default */

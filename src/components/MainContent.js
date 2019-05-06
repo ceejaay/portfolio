@@ -1,11 +1,14 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import {Route} from 'react-router-dom';
+import ScrollableAnchor  from 'react-scrollable-anchor';
+import {configureAnchors } from 'react-scrollable-anchor';
 import ItemPage from './ItemPage';
 import ItemPreview from './ItemPreview';
 import mypicture from '../assets/chad_jemmett_picture.png';
 import emailPic from '../assets/email_pic.png';
 import doa from '../assets/doa.png';
+
 // import imagePath from '../assets/';
 import projectData from '../assets/json_data.js';
 import {FaLinkedin} from 'react-icons/fa';
@@ -14,10 +17,11 @@ import {MdEmail} from 'react-icons/md';
 import {MdPhone} from 'react-icons/md';
 
 
+configureAnchors({offset: -60, scrollDuration: 800})
 const imgStyle = {
   backgroundImage: `url(${mypicture})`,
-  height: '250px',
-  width: '250px',
+  height: '350px',
+  width: '350px',
   borderRadius: "50%",
   backgroundSize: 'cover',
 
@@ -56,7 +60,7 @@ class MainContent extends Component {
                   <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
                 </div>
               </div>
-              <Link to={'about'}><div className="main-cta-button">See what I do</div></Link>
+              <a className="main-cta-button " href='#about'>See what I do</a>
             </div>
           </div>
 
@@ -68,7 +72,9 @@ class MainContent extends Component {
               </Link>
             )})}
           </div>
-            <div id="about"></div>
+            <ScrollableAnchor id={'about'}>
+            <div id="about">This thing here</div>
+            </ScrollableAnchor>
         </div>)
     }
 
