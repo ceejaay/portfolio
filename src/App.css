@@ -154,7 +154,7 @@ h1,strong {
   padding: 0 0 25px 0;
   color: white;
   font-weight: 600;
-  border-radius: 20px;
+  border-radius: 0px 0px 20px 20px;
   margin: 20px 0;
   border-bottom: 1px gray solid;
   border-left: 1px gray solid;
@@ -173,6 +173,7 @@ h1,strong {
   height: 50px;
   background-color: #282828;
   border-radius: 10px 10px 0px 0px;
+  border: gray solid 1px;
 }
 
 .preview-image-div {
@@ -275,6 +276,7 @@ h1,strong {
 
   .main-preview-content {
   /* border: dashed yellow 3px; */
+    
   }
 
   .main-bio-content {
