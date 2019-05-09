@@ -20,10 +20,11 @@ import {MdPhone} from 'react-icons/md';
 configureAnchors({offset: -60, scrollDuration: 800})
 const imgStyle = {
   backgroundImage: `url(${mypicture})`,
-  height: '350px',
-  width: '350px',
+  height: '450px',
+  width: '450px',
   borderRadius: "50%",
   backgroundSize: 'cover',
+  backgroundPosition: 'center',
 
 }
 
