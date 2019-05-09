@@ -5,7 +5,7 @@ import ScrollableAnchor  from 'react-scrollable-anchor';
 import {configureAnchors } from 'react-scrollable-anchor';
 import ItemPage from './ItemPage';
 import ItemPreview from './ItemPreview';
-import mypicture from '../assets/chad_jemmett_picture.png';
+import mypicture from '../assets/chad_jemmett_picture.jpg';
 import emailPic from '../assets/email_pic.png';
 import doa from '../assets/doa.png';
 
@@ -24,7 +24,7 @@ const imgStyle = {
   width: '450px',
   borderRadius: "50%",
   backgroundSize: 'cover',
-  backgroundPosition: 'center',
+  backgroundPosition: '0px -40px',
 
 }
 
