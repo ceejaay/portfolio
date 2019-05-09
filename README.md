@@ -8,3 +8,7 @@ Todo:
 - [X] fix my headshot image. Needs to be more centered.
 
 - [ ] Give the nav bar more vertical margin.
+
+- [ ] Fully responsive.
+
+- [ ] Fix some of the colors. The blue is not right.
