@@ -1,3 +1,7 @@
+html {
+  font-size: 62.5%;
+}
+
 a {
   text-decoration: none;
 }
@@ -103,7 +107,8 @@ h1,strong {
   /* border: dotted green 3px; */
 }
 
-.about-me p {
+.about-me a {
+
 }
 
 /* .contact-links { */
@@ -174,6 +179,7 @@ h1,strong {
   background-color: #282828;
   border-radius: 10px 10px 0px 0px;
   border: gray solid 1px;
+  font-size: 2em;
 }
 
 .preview-image-div {
@@ -282,6 +288,7 @@ h1,strong {
   .main-bio-content {
     display: flex;
     align-items: center;
+    margin-bottom: 200px;
   /* border: dotted red 3px; */
   }
 
@@ -305,10 +312,19 @@ h1,strong {
   /* border: dotted green 2px; */
   }
 
+  .main-greeting-name p {
+    font-size: 2em;
+  /* border: dotted green 2px; */
+  }
+  .main-greeting-name h1 {
+    font-size: 5em;
+  /* border: dotted green 2px; */
+  }
   .main-about-me-text {
     /* border: dashed green 4px; */
     width: 80%;
     margin: 10px 3%;
+    font-size: 3em;
   }
 
   .header-link-div {
@@ -317,6 +333,7 @@ h1,strong {
     justify-content: space-around;
     width: 50%;
     font-weight: 600;
+    font-size: 2.5em;
 
 
   }
@@ -337,6 +354,7 @@ h1,strong {
     color: white;
     font-weight: 700;
     max-width: 24em;
+    font-size: 2.5em;
   }
   /* if it exceens the min width it changes to this: */
   /* outside of this is default */
