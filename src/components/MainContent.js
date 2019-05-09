@@ -55,8 +55,8 @@ class MainContent extends Component {
             <div className="main-bio-text">
               <div className="about-me">
                 <div className="main-greeting-name">
-                <p>Hello! My name is </p>
-                <h1>Chad Jemmett</h1>
+                  <p>Hello! My name is </p>
+                  <h1>Chad Jemmett</h1>
                 </div>
                 <div className="main-about-me-text">
                   <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
@@ -66,7 +66,7 @@ class MainContent extends Component {
             </div>
           </div>
 
-          <div className="main-preview-content">
+          <div className="hide-me main-preview-content">
           { this.state.projects.map((item)=>  {
             return (
               <Link to={`/${item.id}`}>
@@ -75,7 +75,7 @@ class MainContent extends Component {
             )})}
           </div>
             <ScrollableAnchor id={'about'}>
-            <div id="about">This thing here</div>
+            <div id="about"></div>
             </ScrollableAnchor>
         </div>)
     }
