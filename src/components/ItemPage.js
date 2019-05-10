@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import projectData from '../assets/json_data.js'
 
 
 
 const ItemPage = props  =>  {
-  const projData = projectData.projects.filter(item => item.id == props.match.params.id)[0];
+  const projData = projectData.projects.filter(item => item.id === props.match.params.id)[0];
         return(
             <div>
               <div>

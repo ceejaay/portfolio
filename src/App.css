@@ -5,6 +5,7 @@ html {
 a {
   text-decoration: none;
 }
+
 /* .App-logo { */
 /*   animation: App-logo-spin infinite 20s linear; */
 /*   height: 40vmin; */
@@ -29,7 +30,7 @@ a {
 }
 
 .content-container {
-  margin-top: 44px;
+  margin-top: 65px;
   width: 100%;
   /* border: dotted yellow 3px; */
 
@@ -49,8 +50,8 @@ a {
   top: 0;
   width: 100%;
   z-index: 10000;
-  height: 44px;
-  line-height: 44px;
+  height: 55px;
+  line-height: 55;
 
 }
 
@@ -156,14 +157,15 @@ h1,strong {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  padding: 0 0 25px 0;
+  /* padding: 0 0 25px 0; */
   color: white;
   font-weight: 600;
   border-radius: 0px 0px 20px 20px;
-  margin: 20px 0;
+  /* margin: 20px 0; */
   border-bottom: 1px gray solid;
   border-left: 1px gray solid;
   border-right: 1px gray solid;
+  overflow: hidden;
 }
 
 .project-summary a {
@@ -177,7 +179,7 @@ h1,strong {
   width: 100%;
   height: 50px;
   background-color: #282828;
-  border-radius: 10px 10px 0px 0px;
+  /* border-radius: 10px 10px 0px 0px; */
   border: gray solid 1px;
   font-size: 2em;
 }
@@ -187,8 +189,16 @@ h1,strong {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 25px 0;
+  /* margin: 25px 0; */
+  overflow: hidden;
 }
+
+.preview-image-div img {
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+}
+
 
 .summary-img {
   height: 100px;
@@ -243,6 +253,16 @@ h1,strong {
   margin: 2px 0;
 }
 
+
+.main-projects-header {
+  background: #282828;
+  color: white;
+  font-size: 2em;
+  padding-left: 5%;
+  margin-bottom: 30px;
+  margin-top: 44px;
+}
+
 /* .header-link-div { */
 /*   width: 70%; */
 
@@ -267,8 +287,8 @@ h1,strong {
     top: 0;
     width: 100%;
     z-index: 10000;
-    height: 44px;
-    line-height: 44px;
+    height: 65px;
+    line-height: 65px;
 
   }
 
@@ -284,14 +304,24 @@ h1,strong {
   }
 
   .main-preview-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 300px;
   /* border: dashed yellow 3px; */
     
   }
 
+  .main-preview-content a {
+    width: 100%;
+    margin: 0 2%;
+  }
+
+
   .main-bio-content {
     display: flex;
     align-items: center;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
     margin-top: 100px;
   /* border: dotted red 3px; */
   }
@@ -359,10 +389,10 @@ h1,strong {
     align-items: center;
     justify-content: center;
     height: 100px;
-    width: 65%;
+    width: 45%;
     border: black solid 1px;
     border-radius: 8px;
-    background: blue;
+    background: #43B3E0;
     color: white;
     font-weight: 700;
     max-width: 24em;

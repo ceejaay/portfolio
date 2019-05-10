@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import ItemPage from './components/ItemPage';
-import Resume from './components/Resume';
-import Footer from './components/Footer';
+// import Resume from './components/Resume';
+// import Footer from './components/Footer';
 // import { library  } from '@fortawesome/fontawesome-svg-core'
 // import { FontAwesomeIcon  } from '@fortawesome/react-fontawesome'
 // import { faStroopwafel  } from '@fortawesome/free-solid-svg-icons'
