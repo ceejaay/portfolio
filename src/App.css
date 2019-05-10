@@ -299,7 +299,7 @@ h1,strong {
   .content-container {
     display: flex;
     flex-direction: column;
-  border: dotted green 3px;
+  /* border: dotted green 3px; */
     width: 80%;
   }
 
@@ -308,7 +308,7 @@ h1,strong {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 300px;
-  border: dashed yellow 3px;
+  /* border: dashed yellow 3px; */
     
   }
 

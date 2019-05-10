@@ -1,20 +1,18 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import {Route} from 'react-router-dom';
+// import {Route} from 'react-router-dom';
 import ScrollableAnchor  from 'react-scrollable-anchor';
 import {configureAnchors } from 'react-scrollable-anchor';
-import ItemPage from './ItemPage';
+// import ItemPage from './ItemPage';
 import ItemPreview from './ItemPreview';
 import mypicture from '../assets/chad_jemmett_picture.jpg';
-import emailPic from '../assets/email_pic.png';
-import doa from '../assets/doa.png';
 
 // import imagePath from '../assets/';
 import projectData from '../assets/json_data.js';
-import {FaLinkedin} from 'react-icons/fa';
-import {GoMarkGithub} from 'react-icons/go';
-import {MdEmail} from 'react-icons/md';
-import {MdPhone} from 'react-icons/md';
+// import {FaLinkedin} from 'react-icons/fa';
+// import {GoMarkGithub} from 'react-icons/go';
+// import {MdEmail} from 'react-icons/md';
+// import {MdPhone} from 'react-icons/md';
 
 
 configureAnchors({offset: -65, scrollDuration: 9000})
@@ -74,7 +72,7 @@ class MainContent extends Component {
           <div className="main-preview-content">
           { this.state.projects.map((item)=>  {
             return (
-              <Link to={`/${item.id}`}>
+              <Link key={item.id} to={`/${item.id}`}>
                 <ItemPreview projData={item} key={item.id}/>
               </Link>
             )})}

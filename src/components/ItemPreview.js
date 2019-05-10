@@ -10,14 +10,14 @@ import React from 'react';
           // <div className="summary-img" style={divStyle}>
           // </div>
 const ItemPreview = (props) => {
-  const divStyle = {
-    backgroundImage: `url(${props.projData.image})`,
-    height: '300px',
-    width: '300px',
-    backgroundSize: 'contain',
-    // backgroundPosition: '0px -50%',
-    // overflow: 'hidden'
-  }
+  // const divStyle = {
+  //   backgroundImage: `url(${props.projData.image})`,
+  //   height: '300px',
+  //   width: '300px',
+  //   backgroundSize: 'contain',
+  //   // backgroundPosition: '0px -50%',
+  //   // overflow: 'hidden'
+  // }
 
 
   return (
