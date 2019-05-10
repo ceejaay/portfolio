@@ -17,7 +17,7 @@ import {MdEmail} from 'react-icons/md';
 import {MdPhone} from 'react-icons/md';
 
 
-configureAnchors({offset: -60, scrollDuration: 800})
+configureAnchors({offset: -65, scrollDuration: 9000})
 const imgStyle = {
   backgroundImage: `url(${mypicture})`,
   height: '450px',
@@ -59,14 +59,19 @@ class MainContent extends Component {
                   <h1>Chad Jemmett</h1>
                 </div>
                 <div className="main-about-me-text">
-                  <p>I'm a full-stack web developer. I have skills in React, Node, Javascript, Python and Ruby.</p>
+                  <p>I'm a full-stack web developer. I'm skilled in React, Node, Javascript, Python, and Ruby.</p>
                 </div>
               </div>
-              <a className="main-cta-button " href='#about'>See what I do</a>
+              <a className="main-cta-button " href='#projects'>See what I do</a>
             </div>
           </div>
 
-          <div className="hide-me main-preview-content">
+          <div id="projects" className="main-projects-header">
+            <h2>
+              Projects
+            </h2>
+          </div>
+          <div className="main-preview-content">
           { this.state.projects.map((item)=>  {
             return (
               <Link to={`/${item.id}`}>

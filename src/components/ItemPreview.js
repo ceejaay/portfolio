@@ -7,9 +7,16 @@ import React from 'react';
 
           // <img src={props.projData.image}  alt={props.projData.name}/>
           // <img src={props.projData.image}  alt={props.projData.name}/>
+          // <div className="summary-img" style={divStyle}>
+          // </div>
 const ItemPreview = (props) => {
   const divStyle = {
     backgroundImage: `url(${props.projData.image})`,
+    height: '300px',
+    width: '300px',
+    backgroundSize: 'contain',
+    // backgroundPosition: '0px -50%',
+    // overflow: 'hidden'
   }
 
 
@@ -19,8 +26,7 @@ const ItemPreview = (props) => {
           {props.projData.name}
         </div>
         <div className="preview-image-div">
-          <div className="summary-img" style={divStyle}>
-          </div>
+          <img src={props.projData.image} alt={'props.projData.name'}/>
         </div>
       </div>
       )
