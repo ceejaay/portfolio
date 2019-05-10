@@ -12,3 +12,7 @@ Todo:
 - [ ] Fully responsive.
 
 - [ ] Fix some of the colors. The blue is not right.
+
+- [ ] Fix the projects headline thing. It overlaps with the nav bar.
+
+- [ ] Fix the the nav bar links. They don't do anything.
