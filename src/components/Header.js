@@ -6,8 +6,8 @@ function Header() {
 
       <div className="header">
         <div className="header-link-div">
-          <Link to={"/"} ><div>Main</div> </Link>
-          <Link to={"#"}><div >Resume</div> </Link>
+          <Link to={"/#top"} ><div>Top</div> </Link>
+          <Link to={"/#projects"} ><div>Projects</div> </Link>
           <Link to={"#"} ><div>Contact Me</div> </Link>
         </div>
       </div>

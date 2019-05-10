@@ -47,8 +47,8 @@ class MainContent extends Component {
 
   render() {
     return (
-        <div className="content-container">
-          <div className="main-bio-content">
+        <div  className="content-container">
+          <div id="top" className="main-bio-content">
             <div className='headshot'>
               <div style={imgStyle}></div>
             </div>
@@ -79,9 +79,6 @@ class MainContent extends Component {
               </Link>
             )})}
           </div>
-            <ScrollableAnchor id={'about'}>
-            <div id="about"></div>
-            </ScrollableAnchor>
         </div>)
     }
 
