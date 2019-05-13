@@ -16,3 +16,10 @@ Todo:
 - [ ] Fix the projects headline thing. It overlaps with the nav bar.
 
 - [ ] Fix the the nav bar links. They don't do anything.
+
+- [ ] Change the hover color and font color on the project page links.
+
+- [ ] Flesh out the description on the project pages.
+
+- [ ] Fix all the links so they go to the right place for the anchors and such.
+
