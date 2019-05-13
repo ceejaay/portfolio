@@ -15,7 +15,7 @@ import projectData from '../assets/json_data.js';
 // import {MdPhone} from 'react-icons/md';
 
 
-configureAnchors({offset: -65, scrollDuration: 9000})
+configureAnchors({offset: -55, scrollDuration: 200})
 const imgStyle = {
   backgroundImage: `url(${mypicture})`,
   height: '450px',
@@ -46,29 +46,33 @@ class MainContent extends Component {
   render() {
     return (
         <div  className="content-container">
-          <div id="top" className="main-bio-content">
-            <div className='headshot'>
-              <div style={imgStyle}></div>
-            </div>
-            <div className="main-bio-text">
-              <div className="about-me">
-                <div className="main-greeting-name">
-                  <p>Hello! My name is </p>
-                  <h1>Chad Jemmett</h1>
-                </div>
-                <div className="main-about-me-text">
-                  <p>I'm a full-stack web developer. I'm skilled in React, Node, Javascript, Python, and Ruby.</p>
-                </div>
+          <ScrollableAnchor id={'top'}>
+            <div className="main-bio-content">
+              <div className='headshot'>
+                <div style={imgStyle}></div>
               </div>
-              <a className="main-cta-button " href='#projects'>See what I do</a>
+              <div className="main-bio-text">
+                <div className="about-me">
+                  <div className="main-greeting-name">
+                    <p>Hello! My name is </p>
+                    <h1>Chad Jemmett</h1>
+                  </div>
+                  <div className="main-about-me-text">
+                    <p>I'm a full-stack web developer. I'm skilled in React, Node, Javascript, Python, and Ruby.</p>
+                  </div>
+                </div>
+                <a className="main-cta-button " href='#projects'>See what I do</a>
+              </div>
             </div>
-          </div>
+          </ScrollableAnchor>
 
-          <div id="projects" className="main-projects-header">
-            <h2>
-              Projects
-            </h2>
-          </div>
+          <ScrollableAnchor id={'projects'}>
+            <div className="main-projects-header">
+              <h2>
+                Projects
+              </h2>
+            </div>
+          </ScrollableAnchor>
           <div  className="main-preview-content">
           { this.state.projects.map((item)=>  {
             return (
