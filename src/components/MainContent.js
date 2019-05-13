@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 // import {Route} from 'react-router-dom';
 import ScrollableAnchor  from 'react-scrollable-anchor';
 import {configureAnchors } from 'react-scrollable-anchor';
+import { goToTop } from 'react-scrollable-anchor';
 // import ItemPage from './ItemPage';
 import ItemPreview from './ItemPreview';
 import mypicture from '../assets/chad_jemmett_picture.jpg';
@@ -15,7 +16,7 @@ import projectData from '../assets/json_data.js';
 // import {MdPhone} from 'react-icons/md';
 
 
-configureAnchors({offset: -55, scrollDuration: 200})
+configureAnchors({offset: -55, scrollDuration: 2000})
 const imgStyle = {
   backgroundImage: `url(${mypicture})`,
   height: '450px',
@@ -46,25 +47,23 @@ class MainContent extends Component {
   render() {
     return (
         <div  className="content-container">
-          <ScrollableAnchor id={'top'}>
-            <div className="main-bio-content">
-              <div className='headshot'>
-                <div style={imgStyle}></div>
-              </div>
-              <div className="main-bio-text">
-                <div className="about-me">
-                  <div className="main-greeting-name">
-                    <p>Hello! My name is </p>
-                    <h1>Chad Jemmett</h1>
-                  </div>
-                  <div className="main-about-me-text">
-                    <p>I'm a full-stack web developer. I'm skilled in React, Node, Javascript, Python, and Ruby.</p>
-                  </div>
-                </div>
-                <a className="main-cta-button " href='#projects'>See what I do</a>
-              </div>
+          <div className="main-bio-content">
+            <div className='headshot'>
+              <div style={imgStyle}></div> 
             </div>
-          </ScrollableAnchor>
+            <div className="main-bio-text">
+              <div className="about-me">
+                <div className="main-greeting-name">
+                  <p>Hello! My name is </p>
+                  <h1>Chad Jemmett</h1>
+                </div>
+                <div className="main-about-me-text">
+                  <p>I'm a full-stack web developer. I'm skilled in React, Node, Javascript, Python, and Ruby.</p>
+                </div>
+              </div>
+              <a className="main-cta-button " href='#projects'>See what I do</a>
+            </div>
+          </div>
 
           <ScrollableAnchor id={'projects'}>
             <div className="main-projects-header">
