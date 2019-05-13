@@ -280,6 +280,45 @@ h1,strong {
     display: hidden;
   }
 
+  .project-page-container {
+    margin-top: 55px;
+  border: dotted green 8px;
+  }
+
+  .project-page-name {
+  border: dotted green 2px;
+
+  }
+
+  .project-page-name h1 {
+    font-size: 3em;
+  border: dotted green 2px;
+
+  }
+
+  .project-page-image {
+  border: dashed green 3px;
+
+  }
+
+  .project-page-description {
+
+  }
+
+  .project-page-description p {
+    font-size: 1.9em;
+
+  }
+
+  .project-page-notes {
+
+  }
+
+  .project-page-links {
+
+  }
+
+
 @media (min-width: 400px ) {
   .header{
     background-color: #282828;

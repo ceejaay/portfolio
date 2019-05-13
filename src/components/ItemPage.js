@@ -11,30 +11,31 @@ const ItemPage = props  =>  {
     return item.id === paramId 
   })
 
-  console.log("project datat from find", projData)
   // console.log("array: ", projectData.projects)
 
   // const projData = projectData.projects.find(item => item.id === props.match.params.id);
   // console.log("proj data: ", projData)
   // console.log(projData);
         return(
-            <div>
-              <div>
-                <h2>{projData.name}</h2>
+            <div className="project-page-container">
+              <div className="project-page-name">
+                <h1>{projData.name}</h1>
               </div>
-              <div >
+              <div className="project-page-image" >
                 <img src={projData.image}  alt={projData.title}/>
               </div>
-              <div >
+              <div className="project-page-description" >
                 <p>
                   {projData.description}
                 </p>
-                <b>
-                  {projData.notes}
-                </b>
+                <div className="project-page-notes">
+                  <b>
+                    {projData.notes}
+                  </b>
+                </div>
 
 
-                <div>
+                <div className="project-page-links">
                   <a href={projData.links.liveSite}>
                     <div>
                       Live Project Link
