@@ -69,7 +69,7 @@ class MainContent extends Component {
               Projects
             </h2>
           </div>
-          <div className="main-preview-content">
+          <div  className="main-preview-content">
           { this.state.projects.map((item)=>  {
             return (
               <Link key={item.id} to={`/${item.id}`}>

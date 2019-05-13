@@ -30,7 +30,7 @@ a {
 }
 
 .content-container {
-  margin-top: 65px;
+  margin-top: 55px;
   width: 100%;
   /* border: dotted yellow 3px; */
 
@@ -39,7 +39,7 @@ a {
 
 
 
-.header{
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -52,6 +52,7 @@ a {
   z-index: 10000;
   height: 55px;
   line-height: 55;
+  margin-bottom: 55px;
 
 }
 
@@ -228,7 +229,7 @@ h1,strong {
   justify-content: center;
   /* background: #FF3B3F; */
   /* color: #EFEFEF; */
-  margin-top: 44px;
+  margin-top: 55px;
 }
 
 .resume-header a  {
@@ -260,7 +261,7 @@ h1,strong {
   font-size: 2em;
   padding-left: 5%;
   margin-bottom: 30px;
-  margin-top: 44px;
+  /* margin-top: 65px; */
 }
 
 /* .header-link-div { */
@@ -279,6 +280,111 @@ h1,strong {
     display: hidden;
   }
 
+  .project-page-container {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 55px; */
+    margin: 55px 3% 0 3%;
+  /* border: dotted green 8px; */
+  }
+
+  .project-page-name {
+  /* border: dotted green 2px; */
+
+  }
+
+  .project-page-name h1 {
+    font-size: 4em;
+  /* border: dotted green 2px; */
+
+  }
+
+  .project-image-description {
+    display: flex;
+  /* border: dotted blue 2px; */
+
+  }
+
+  .project-page-image img  {
+   
+  border: solid black 1px;
+  height: auto;
+  max-width: 100%;
+
+  }
+
+  .project-page-image {
+  /* border: dashed green 3px; */
+  width: 100%;
+
+  }
+
+  .project-page-description {
+    display: flex;
+    width: 100%;
+  }
+
+  .project-page-description p {
+    font-size: 2em;
+    width: 100%;
+    margin: 0 0 10px 0;
+
+  }
+
+  .project-description-and-links {
+  /* border: dotted green 2px; */
+  width: 60%;
+  /* padding: 0 2% 0; */
+  margin: 0 3% 0;
+  }
+
+
+  .project-link-button {
+    width: 100%;
+    border: solid black 1px;
+  }
+
+
+
+
+  .project-page-notes {
+    font-size: 2em;
+    margin: 10px 0;
+
+  }
+
+
+  .project-page-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    margin: 10px 0;
+  /* border: dotted yellow 2px; */
+
+  }
+
+  .project-page-links  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    border: 1px black solid;
+    width: 100%;
+    height: 35px;
+    margin: 7px 0;
+    padding: 5px 0;
+    color: #282828;
+  /* border: dotted yellow 2px; */
+
+  }
+
+  .project-page-links  a:hover {
+    background-color: gray;
+    opacity: 0.5;
+  /* border: dotted yellow 2px; */
+
+  }
 @media (min-width: 400px ) {
   .header{
     background-color: #282828;
