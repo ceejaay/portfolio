@@ -1,15 +1,15 @@
 import React from 'react';  
-import { Link  } from 'react-router-dom';
-import { goToTop } from 'react-scrollable-anchor';
+// import { Link  } from 'react-router-dom';
+// import { goToTop } from 'react-scrollable-anchor';
 
 function Header() {
   return (
 
       <div className="header">
         <div className="header-link-div">
-          <Link to={"/"} ><div>Top</div> </Link>
-          <Link to={"#projects"} ><div>Projects</div> </Link>
-          <Link to={"#"} ><div>Contact Me</div> </Link>
+          <a  href='/#projects'>Projects</a>
+          <a  href='/#top'>Top</a>
+          <a  href='/#contact'>Contact Me</a>
         </div>
       </div>
       )
