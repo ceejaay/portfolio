@@ -281,6 +281,8 @@ h1,strong {
   }
 
   .project-page-container {
+    display: flex;
+    flex-direction: column;
     margin-top: 55px;
   border: dotted green 8px;
   }
@@ -296,25 +298,46 @@ h1,strong {
 
   }
 
+  .project-image-description {
+    display: flex;
+  border: dotted blue 2px;
+  
+  }
+
+  .project-page-image img  {
+  border: dashed green 3px;
+  height: auto;
+  max-width: 100%;
+
+  }
+
   .project-page-image {
   border: dashed green 3px;
+  width: 100%;
 
   }
 
   .project-page-description {
+    display: flex;
+ 
 
   }
 
   .project-page-description p {
     font-size: 1.9em;
+    width: 100%;
 
   }
+
+
 
   .project-page-notes {
 
   }
 
+
   .project-page-links {
+  border: dotted yellow 2px;
 
   }
 
