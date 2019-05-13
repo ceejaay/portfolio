@@ -30,7 +30,7 @@ a {
 }
 
 .content-container {
-  margin-top: 65px;
+  margin-top: 55px;
   width: 100%;
   /* border: dotted yellow 3px; */
 
@@ -39,7 +39,7 @@ a {
 
 
 
-.header{
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -52,6 +52,7 @@ a {
   z-index: 10000;
   height: 55px;
   line-height: 55;
+  margin-bottom: 55px;
 
 }
 
@@ -228,7 +229,7 @@ h1,strong {
   justify-content: center;
   /* background: #FF3B3F; */
   /* color: #EFEFEF; */
-  margin-top: 44px;
+  margin-top: 55px;
 }
 
 .resume-header a  {
@@ -260,7 +261,7 @@ h1,strong {
   font-size: 2em;
   padding-left: 5%;
   margin-bottom: 30px;
-  margin-top: 44px;
+  /* margin-top: 65px; */
 }
 
 /* .header-link-div { */
