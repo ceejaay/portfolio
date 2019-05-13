@@ -33,13 +33,13 @@ const ItemPage = props  =>  {
                   </div>
                   <div className="project-page-links">
                     <a href={projData.links.liveSite}>
-                      Live Project Link
+                        Live Project Link
                     </a>
                     <a href={projData.links.github}>
-                      Github Repository
+                        Github Repository
                     </a>
                     <a href={projData.links.pullRequests}>
-                      Link to My Pull Requests
+                        Link to My Pull Requests
                     </a>
                   </div>
 

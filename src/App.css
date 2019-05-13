@@ -339,6 +339,12 @@ h1,strong {
   }
 
 
+  .project-link-button {
+    width: 100%;
+    border: solid black 1px;
+  }
+
+
 
 
   .project-page-notes {
@@ -358,7 +364,27 @@ h1,strong {
 
   }
 
+  .project-page-links  a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    border: 1px black solid;
+    width: 100%;
+    height: 35px;
+    margin: 7px 0;
+    padding: 5px 0;
+    color: #282828;
+  /* border: dotted yellow 2px; */
 
+  }
+
+  .project-page-links  a:hover {
+    background-color: gray;
+    opacity: 0.5;
+  /* border: dotted yellow 2px; */
+
+  }
 @media (min-width: 400px ) {
   .header{
     background-color: #282828;
