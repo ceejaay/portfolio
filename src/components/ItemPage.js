@@ -16,31 +16,34 @@ const ItemPage = props  =>  {
                 <h1>{projData.name}</h1>
               </div>
 
-              <div className="project-imaage-description">
+              <div className="project-image-description">
                 <div className="project-page-image">
                   <img src={projData.image}  alt={projData.title}/>
                 </div>
-                <div className="project-page-description">
-                  <p>
-                    {projData.description}
-                  </p>
+                <div className="project-description-and-links">
+                  <div className="project-page-description">
+                    <p>
+                      {projData.description}
+                    </p>
+                  </div>
+                  <div className="project-page-notes">
+                    <b>
+                      {projData.notes}
+                    </b>
+                  </div>
+                  <div className="project-page-links">
+                    <a href={projData.links.liveSite}>
+                      Live Project Link
+                    </a>
+                    <a href={projData.links.github}>
+                      Github Repository
+                    </a>
+                    <a href={projData.links.pullRequests}>
+                      Link to My Pull Requests
+                    </a>
+                  </div>
+
                 </div>
-                <div className="project-page-notes">
-                  <b>
-                    {projData.notes}
-                  </b>
-                </div>
-              </div>
-              <div className="project-page-links">
-                <a href={projData.links.liveSite}>
-                  Live Project Link
-                </a>
-                <a href={projData.links.github}>
-                  Github Repository
-                </a>
-                <a href={projData.links.pullRequests}>
-                  Link to My Pull Requests
-                </a>
               </div>
             </div>
             )
