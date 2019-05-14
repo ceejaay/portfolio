@@ -1,20 +1,74 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-// import {Route} from 'react-router-dom';
 import ScrollableAnchor  from 'react-scrollable-anchor';
 import {configureAnchors } from 'react-scrollable-anchor';
 import { goToTop } from 'react-scrollable-anchor';
-// import ItemPage from './ItemPage';
 import ItemPreview from './ItemPreview';
 import mypicture from '../assets/chad_jemmett_picture.jpg';
-
-// import imagePath from '../assets/';
+import styled  from 'styled-components';
 import projectData from '../assets/json_data.js';
-// import 'css/mainContent.css'
-// import {FaLinkedin} from 'react-icons/fa';
-// import {GoMarkGithub} from 'react-icons/go';
-// import {MdEmail} from 'react-icons/md';
-// import {MdPhone} from 'react-icons/md';
+
+const BioText = styled.p`
+  font-size: 1em;
+`
+
+const AboutMe = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  /* margin: 10px 3%; */
+  font-size: 3em;
+`
+
+const GreetingName = styled.div`
+    display: flex;
+    width: 100%;
+`
+
+const Headshot = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+
+`
+
+const MainBioText = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  margin-left: 9%;
+`
+
+const AboutMeBox = styled.div`
+    display: flex;
+    flex-direction: column;
+
+`
+
+const MainBioContent = styled.div`
+  display: flex;
+  align-items: center;
+  margin-bottom: 250px;
+  margin-top: 100px;
+`
+
+const ContentContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+`
+
+const PreviewContent = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 300px;
+`
+
 
 
 configureAnchors({offset: -55, scrollDuration: 2000})
@@ -28,9 +82,6 @@ const imgStyle = {
 
 }
 
-            // <img src={"."} alt={'chad jemmett'} />
-// <img src={pic}  alt={"chad.jemmett@gmail.com"}/>
-// <img src={"https://www.dropbox.com/s/bl1yl0ld9js2xj1/chad_jemmett_picture.png"}  alt={"chad.jemmett@gmail.com"}/>
 class MainContent extends Component {
   constructor(props) {
     super(props);
@@ -47,24 +98,26 @@ class MainContent extends Component {
 
   render() {
     return (
-        <div  className="content-container">
-          <div className="main-bio-content">
-            <div className='headshot'>
+        <ContentContainer>
+          <MainBioContent>
+            <Headshot>
               <div style={imgStyle}></div> 
-            </div>
-            <div className="main-bio-text">
-              <div className="about-me">
-                <div className="main-greeting-name">
+            </Headshot>
+            <MainBioText>
+              <AboutMeBox>
+                <GreetingName className="main-greeting-name">
                   <p>Hello! My name is </p>
                   <h1>Chad Jemmett</h1>
-                </div>
-                <div className="main-about-me-text">
-                  <p>I'm a full-stack web developer. I'm skilled in React, Node, Javascript, Python, and Ruby.</p>
-                </div>
-              </div>
+                </GreetingName>
+                <AboutMe>
+                  <BioText>
+                    I'm a full-stack web developer. I'm skilled in React, Node, Javascript, Python, and Ruby.
+                  </BioText>
+                </AboutMe>
+              </AboutMeBox>
               <a className="main-cta-button " href='#projects'>See what I do</a>
-            </div>
-          </div>
+            </MainBioText>
+          </MainBioContent>
 
           <ScrollableAnchor id={'projects'}>
             <div className="main-projects-header">
@@ -73,15 +126,16 @@ class MainContent extends Component {
               </h2>
             </div>
           </ScrollableAnchor>
-          <div  className="main-preview-content">
+          <PreviewContent className='main-preview-content'>
           { this.state.projects.map((item)=>  {
             return (
               <Link key={item.id} to={`/${item.id}`}>
                 <ItemPreview projData={item} key={item.id}/>
               </Link>
             )})}
-          </div>
-        </div>)
+          </PreviewContent>
+        </ContentContainer>
+      )
     }
 
   }

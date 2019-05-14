@@ -23,3 +23,5 @@ Todo:
 
 - [ ] Fix all the links so they go to the right place for the anchors and such.
 
+- [ ] Fix the header links. Some are react router dom links some are `a` tags.
+
