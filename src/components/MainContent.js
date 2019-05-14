@@ -82,9 +82,6 @@ const imgStyle = {
 
 }
 
-            // <img src={"."} alt={'chad jemmett'} />
-// <img src={pic}  alt={"chad.jemmett@gmail.com"}/>
-// <img src={"https://www.dropbox.com/s/bl1yl0ld9js2xj1/chad_jemmett_picture.png"}  alt={"chad.jemmett@gmail.com"}/>
 class MainContent extends Component {
   constructor(props) {
     super(props);
@@ -108,7 +105,7 @@ class MainContent extends Component {
             </Headshot>
             <MainBioText>
               <AboutMeBox>
-                <GreetingName>
+                <GreetingName className="main-greeting-name">
                   <p>Hello! My name is </p>
                   <h1>Chad Jemmett</h1>
                 </GreetingName>
