@@ -387,8 +387,45 @@ h1,strong {
   }
 
   .contact-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     margin-top: 65px;
+    width: 50%;
+    border: dotted green 2px;
   }
+
+  .contact-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    width: 5%;
+  border: dotted green 2px;
+
+
+  }
+
+  .contact-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 75px;
+    font-size: 2em;
+
+  border: dotted green 2px;
+
+  }
+
+  .contact-data-box {
+    display: flex;
+
+  }
+
+  .contact-table {
+  }
+
 @media (min-width: 400px ) {
   .header{
     background-color: #282828;
