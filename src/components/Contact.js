@@ -10,30 +10,31 @@ import styled  from 'styled-components';
 
 const ContactContainer = styled.div`
   margin-top: 65px;
-  border: dotted green 8px;
+  width: 50%;
 `
 
 
 const DataBox = styled.div`
   display: flex;
   flex-direction: row;
+  margin-left: 10%;
 `
 
 const ContactText = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 75px;
-    width: 100%;
+    width: 95%;
     font-size: 3em;
-  border: dotted green 8px;
 `
 
 const Icon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4em;
+  font-size: 5em;
+  width: 10%;
 `
 
 function Contact() {
