@@ -1,14 +1,17 @@
-import React from 'react';  
+import React from 'react';
+import {configureAnchors } from 'react-scrollable-anchor';
 import { Link  } from 'react-router-dom';
+// import { goToTop } from 'react-scrollable-anchor';
 
+configureAnchors({offset: -55, scrollDuration: 2000})
 function Header() {
   return (
 
       <div className="header">
         <div className="header-link-div">
-          <Link to={"/#top"} ><div>Top</div> </Link>
-          <Link to={"/#projects"} ><div>Projects</div> </Link>
-          <Link to={"#"} ><div>Contact Me</div> </Link>
+          <Link to={"/projects"}>Projects</Link>
+          <Link to={"/contact"}>Contact Me</Link>
+          <a  href='/'>Top</a>
         </div>
       </div>
       )

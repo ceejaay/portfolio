@@ -3,19 +3,21 @@ import {Link} from 'react-router-dom';
 // import {Route} from 'react-router-dom';
 import ScrollableAnchor  from 'react-scrollable-anchor';
 import {configureAnchors } from 'react-scrollable-anchor';
+import { goToTop } from 'react-scrollable-anchor';
 // import ItemPage from './ItemPage';
 import ItemPreview from './ItemPreview';
 import mypicture from '../assets/chad_jemmett_picture.jpg';
 
 // import imagePath from '../assets/';
 import projectData from '../assets/json_data.js';
+// import 'css/mainContent.css'
 // import {FaLinkedin} from 'react-icons/fa';
 // import {GoMarkGithub} from 'react-icons/go';
 // import {MdEmail} from 'react-icons/md';
 // import {MdPhone} from 'react-icons/md';
 
 
-configureAnchors({offset: -65, scrollDuration: 9000})
+configureAnchors({offset: -55, scrollDuration: 2000})
 const imgStyle = {
   backgroundImage: `url(${mypicture})`,
   height: '450px',
@@ -46,9 +48,9 @@ class MainContent extends Component {
   render() {
     return (
         <div  className="content-container">
-          <div id="top" className="main-bio-content">
+          <div className="main-bio-content">
             <div className='headshot'>
-              <div style={imgStyle}></div>
+              <div style={imgStyle}></div> 
             </div>
             <div className="main-bio-text">
               <div className="about-me">
@@ -64,11 +66,13 @@ class MainContent extends Component {
             </div>
           </div>
 
-          <div id="projects" className="main-projects-header">
-            <h2>
-              Projects
-            </h2>
-          </div>
+          <ScrollableAnchor id={'projects'}>
+            <div className="main-projects-header">
+              <h2>
+                Projects
+              </h2>
+            </div>
+          </ScrollableAnchor>
           <div  className="main-preview-content">
           { this.state.projects.map((item)=>  {
             return (

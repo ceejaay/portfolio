@@ -385,6 +385,10 @@ h1,strong {
   /* border: dotted yellow 2px; */
 
   }
+
+  .contact-container {
+    margin-top: 65px;
+  }
 @media (min-width: 400px ) {
   .header{
     background-color: #282828;
