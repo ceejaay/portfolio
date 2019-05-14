@@ -1,0 +1,34 @@
+
+.content-container {
+  margin-top: 55px;
+  width: 100%;
+  /* border: dotted yellow 3px; */
+
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.headshot {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px 0;
+  /* margin: 0 10%; */
+
+
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /* border: dotted green 3px; */
+}
+
+.about-me a {
+
+}

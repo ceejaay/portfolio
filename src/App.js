@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Header from './components/Header';
 import MainContent from './components/MainContent';
 import ItemPage from './components/ItemPage';
+import Contact from './components/Contact';
 // import Resume from './components/Resume';
 // import Footer from './components/Footer';
 // import { library  } from '@fortawesome/fontawesome-svg-core'
@@ -26,6 +27,7 @@ class App extends Component {
         <Header />
         <Switch>
           <Route exact path={"/"} component={MainContent}/>
+          <Route path={"/contact"} component={Contact} />
           <Route path={"/:id"} component={ItemPage} />
         </Switch>
       </div>);

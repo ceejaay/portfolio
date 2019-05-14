@@ -9,9 +9,9 @@ function Header() {
 
       <div className="header">
         <div className="header-link-div">
-          <a  href='/#projects'>Projects</a>
+          <Link to={"/projects"}>Projects</Link>
+          <Link to={"/contact"}>Contact Me</Link>
           <a  href='/'>Top</a>
-          <a  href='/#contact'>Contact Me</a>
         </div>
       </div>
       )

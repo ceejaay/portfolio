@@ -10,6 +10,7 @@ import mypicture from '../assets/chad_jemmett_picture.jpg';
 
 // import imagePath from '../assets/';
 import projectData from '../assets/json_data.js';
+// import 'css/mainContent.css'
 // import {FaLinkedin} from 'react-icons/fa';
 // import {GoMarkGithub} from 'react-icons/go';
 // import {MdEmail} from 'react-icons/md';
