@@ -69,6 +69,22 @@ const PreviewContent = styled.div`
     margin-bottom: 300px;
 `
 
+const CtaButton = styled(Link)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 45%;
+    border: black solid 1px;
+    border-radius: 8px;
+    background: #43B3E0;
+    color: white;
+    font-weight: 700;
+    max-width: 24em;
+    font-size: 3em;
+    margin-top: 50px;
+`
+
 
 
 configureAnchors({offset: -55, scrollDuration: 2000})
