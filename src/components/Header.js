@@ -16,8 +16,14 @@ const HeaderDiv = styled.div`
   width: 100%;
   z-index: 10000;
   height: 55px;
-  line-height: 55;
+  line-height: 55px;
   margin-bottom: 55px;
+`
+
+const HeaderLinks =  styled(Link)`
+  color: white;
+  font-weight: 700;
+  line-height: 55px;
 `
 
 const LinkDiv = styled.div`
@@ -34,11 +40,11 @@ const LinkDiv = styled.div`
 configureAnchors({offset: -55, scrollDuration: 2000})
 function Header() {
   return (
-      <HeaderDiv className="header">
+      <HeaderDiv>
         <LinkDiv>
-          <Link to={"/projects"}>Projects</Link>
-          <Link to={"/contact"}>Contact Me</Link>
-          <a  href='/'>Top</a>
+          <HeaderLinks to={"/"}>Home</HeaderLinks>
+          <HeaderLinks to={"/projects"}>Projects</HeaderLinks>
+          <HeaderLinks to={"/contact"}>Contact Me</HeaderLinks>
         </LinkDiv>
       </HeaderDiv>
       )
