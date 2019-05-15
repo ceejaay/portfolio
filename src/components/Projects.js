@@ -30,7 +30,7 @@ class Projects extends Component {
   render(){
     return (
         <ProjectContainer>
-          <PreviewContent className='main-preview-content'>
+          <PreviewContent>
           { this.state.projects.map((item)=>  {
             return (
               <Link key={item.id} to={`/${item.id}`}>

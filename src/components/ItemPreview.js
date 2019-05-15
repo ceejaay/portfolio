@@ -35,12 +35,24 @@ const PreviewName = styled.div`
   font-size: 2em;
 `
 
-const Image = styled.div`
+const ImageDiv = styled.div`
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  &:hover {
+    background-color: lightgray;
+  }
+`
+
+const Image = styled.img`
+  height: auto;
+  width: 100%;
+  overflow: hidden;
+  &:hover {
+    opacity: 0.5;
+  }
 `
 
 const ItemPreview = (props) => {
@@ -49,9 +61,9 @@ const ItemPreview = (props) => {
         <PreviewName>
           {props.projData.name}
         </PreviewName>
-        <Image className="preview-image-div">
-          <img src={props.projData.image} alt={'props.projData.name'}/>
-        </Image>
+        <ImageDiv>
+          <Image src={props.projData.image} alt={'props.projData.name'}/>
+        </ImageDiv>
       </Summary>
       )
 }
