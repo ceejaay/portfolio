@@ -51,6 +51,34 @@ const ExternalLinks = styled.a`
     }
 `
 
+const ProjectImage = styled.div`
+ width: 100%;
+
+`
+
+const Image = styled.img`
+  border: solid black 1px;
+  height: auto;
+  max-width: 100%;
+
+`
+
+const Description = styled.div`
+  width: 100%;
+
+`
+
+const Text = styled.p`
+  font-size: 2em;
+  width: 100%;
+  margin: 0 0 10px 0;
+`
+
+const DescAndLinks = styled.div`
+  width: 60%;
+  margin: 0 3% 0;
+`
+
 
 
 const ItemPage = props  =>  {
@@ -65,17 +93,16 @@ const ItemPage = props  =>  {
               <div>
                 <NameH1>{projData.name}</NameH1>
               </div>
-
               <ProjectDescription>
-                <div className="project-page-image">
-                  <img src={projData.image}  alt={projData.title}/>
-                </div>
-                <div className="project-description-and-links">
-                  <div className="project-page-description">
-                    <p>
+                <ProjectImage>
+                  <Image src={projData.image}  alt={projData.title}/>
+                </ProjectImage>
+                <DescAndLinks>
+                  <Description>
+                    <Text>
                       {projData.description}
-                    </p>
-                  </div>
+                    </Text>
+                  </Description>
                   <Notes>
                     <b>
                       {projData.notes}
@@ -92,8 +119,7 @@ const ItemPage = props  =>  {
                         Link to My Pull Requests
                     </ExternalLinks>
                   </ProjectLinks>
-
-                </div>
+                </DescAndLinks>
               </ProjectDescription>
             </ProjectPage>
             )
