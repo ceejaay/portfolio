@@ -59,7 +59,7 @@ const MainBioContent = styled.div`
 const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 90%;
 `
 
 const PreviewContent = styled.div`
@@ -90,8 +90,8 @@ const CtaButton = styled(Link)`
 configureAnchors({offset: -55, scrollDuration: 2000})
 const imgStyle = {
   backgroundImage: `url(${mypicture})`,
-  height: '450px',
-  width: '450px',
+  height: '350px',
+  width: '350px',
   borderRadius: "50%",
   backgroundSize: 'cover',
   backgroundPosition: '0px -40px',

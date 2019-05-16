@@ -14,7 +14,7 @@ const Summary = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  width: 90%;
   color: white;
   font-weight: 600;
   border-radius: 0px 0px 20px 20px;
