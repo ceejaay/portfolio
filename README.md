@@ -27,5 +27,7 @@ Todo:
 
 - [ ] Fix the backend on the dead or alive app.
 
+- [ ] Add mail to and call links on the contact page.
+
 
 

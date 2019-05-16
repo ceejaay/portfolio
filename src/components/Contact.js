@@ -17,16 +17,23 @@ const ContactContainer = styled.div`
 const DataBox = styled.div`
   display: flex;
   flex-direction: row;
-  margin-left: 10%;
+  margin: 5px 5% 5px 10%;
+  border: black solid 1px;
+  width: 80%;
+  &:hover {
+    background: lightgray;
+  }
 `
 
 const ContactText = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     align-items: center;
     height: 75px;
     width: 95%;
     font-size: 3em;
+    margin-left: 5%;
+    padding-right: 3%;
 `
 
 const Icon = styled.div`
@@ -35,11 +42,18 @@ const Icon = styled.div`
   align-items: center;
   font-size: 5em;
   width: 10%;
+  padding-left: 3%;
+`
+
+const ExLink = styled.a`
+  color: black;
+
 `
 
 function Contact() {
   return (
       <ContactContainer>
+
         <DataBox>
           <Icon>
             <MdPhone/>
@@ -48,6 +62,7 @@ function Contact() {
             <p>208-350-0359</p>
           </ContactText>
         </DataBox>
+
         <DataBox>
           <Icon>
             <MdEmail/>
@@ -56,12 +71,13 @@ function Contact() {
             <p>chad.jemmett@gmail.com</p>
           </ContactText>
         </DataBox>
+
         <DataBox>
           <Icon>
             <GoMarkGithub/>
           </Icon>
           <ContactText>
-            <a href="https://github.com/ceejaay">Github Profile</a>
+            <ExLink href="https://github.com/ceejaay">Github Profile</ExLink>
           </ContactText>
         </DataBox>
 
@@ -70,7 +86,7 @@ function Contact() {
             <FaLinkedin/>
           </Icon>
           <ContactText>
-            <a href="https://www.linkedin.com/in/chad-jemmett-a3a0a347/">LinkedIn Profile</a>
+            <ExLink href="https://www.linkedin.com/in/chad-jemmett-a3a0a347/">LinkedIn Profile</ExLink>
           </ContactText>
         </DataBox>
       </ContactContainer>
