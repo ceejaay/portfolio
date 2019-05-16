@@ -8,12 +8,18 @@ const PreviewContent = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 300px;
+    padding: 2%;
 `
 
 const ProjectContainer = styled.div`
   margin-top: 65px;
 `
+
+const Preview = styled(ItemPreview)`
+  width: 90%;
+
+`
+
 
 class Projects extends Component {
   constructor(props) {
@@ -34,7 +40,7 @@ class Projects extends Component {
           { this.state.projects.map((item)=>  {
             return (
               <Link key={item.id} to={`/${item.id}`}>
-                <ItemPreview projData={item} key={item.id}/>
+                <Preview projData={item} key={item.id}/>
               </Link>
             )})}
           </PreviewContent>
